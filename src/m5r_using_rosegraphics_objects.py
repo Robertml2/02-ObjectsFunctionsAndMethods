@@ -60,7 +60,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
 #            It is necessary when you run objects and points/use a window because otherwise, once you run the code and it
-#           finishes, the window instantly closes out and you can't see the final result.
+#           finishes, the window instantly closes out and you cannot see the final result.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
