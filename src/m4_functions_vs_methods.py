@@ -92,6 +92,8 @@ def main():
 
     try_functions()
 
+    try_methods_and_functions()
+
     window.close_on_mouse_click()  # Your code must be ABOVE this statement
 
 
@@ -227,7 +229,18 @@ def try_methods_and_functions():
     mary = rg.SimpleTurtle()
     mary.pen = rg.Pen('blue', 5)
     mary.backward(150)
-    draw_many_squares(mary)
+    mary.speed = 1
+    draw_many_squares(mary,2,100,30)
+    mary.speed = 5
+    mary.pen.color = 'red'
+    draw_many_squares(mary,10,50,15)
+    mary.speed = 100
+    mary.pen.thickness = 35
+    draw_many_squares(mary,8,300,60)
+    mary.pen = rg.Pen('black',3)
+    mary.backward(200)
+    mary.draw_circle(30)
+    mary.draw_square(50)
 
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
@@ -262,7 +275,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #   NOTE: This function should ** CALL ** the
