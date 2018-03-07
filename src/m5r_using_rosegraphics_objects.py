@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -44,7 +44,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #          -- Write the names of two types of graphics objects
 #             that you can construct OTHER than Circle and Point:
-#                rg.Square , rg.Polygon
+#                Square , Polygon
 #
 #          -- Write the names of three METHODs that Circle objects have:
 #               Hint: Use the circle from the  example3  function below with
@@ -56,7 +56,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #                color, center_point, radius
 #
 #     f. What does a RoseWindow RENDER method do?
-#            It is the seconds to pause
+#            It pauses the window for a certain amount of time
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
 #            It is necessary when you run objects and points/use a window because otherwise, once you run the code and it
@@ -90,7 +90,6 @@ def example1():
     window = rg.RoseWindow(500, 300, 'Example 1: An empty window')
     window.close_on_mouse_click()
 
-    RoseWindow.re
 
 
 def example2():
