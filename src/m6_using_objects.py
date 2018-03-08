@@ -11,9 +11,13 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 import rosegraphics as rg
 
 
+
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
+
+    two_circles()
+    circle_and_rectangle()
 
 
 def two_circles():
@@ -26,6 +30,22 @@ def two_circles():
            -- One is filled with some color and one is not filled.
     -- Waits for the user to press the mouse, then closes the window.
     """
+    window = rg.RoseWindow()
+
+    center_point = rg.Point(200, 150)
+    radius = 30
+    circle1 = rg.Circle(center_point, radius)
+    circle1.fill_color = 'purple'
+    circle1.attach_to(window)
+
+    center_point = rg.Point(50,50)
+    radius = 15
+    circle2 = rg.Circle(center_point, radius)
+    circle2.attach_to(window)
+
+    window.close_on_mouse_click()
+
+
     # -------------------------------------------------------------------------
     # TODO: 2. Implement this function, per its doc-string above.
     #    -- ANY two rg.Circle objects that meet the criteria are fine.
@@ -36,6 +56,22 @@ def two_circles():
 
 
 def circle_and_rectangle():
+
+    window = rg.RoseWindow()
+
+    center_point = rg.Point(100, 75)
+    radius = 20
+    circle = rg.Circle(center_point, radius)
+    circle.fill_color = 'blue'
+    circle.attach_to(window)
+
+    rectangle = rg.Rectangle()
+    rectangle.corner_1 = 200
+    rectangle.corner_2 = 230
+
+    print('1')
+    print('blue')
+    print('150')
     """
     -- Constructs an rg.RoseWindow.
     -- Constructs and draws a rg.Circle and rg.Rectangle
